@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        th, td {
+            border: 1px solid black;
+        }
+        tfoot{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <!-- cabeçalho da tabela -->
+         <thead> <!-- Cabeçalho-->
+            <!-- representa uma linha com a tag tr -->
+             <tr> <!--Uma unica linha-->
+                <!-- th vai ser responsavel por cada coluna do nosso cabeçalho -->
+                <th>Produto</th> <!--Coluna-->
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+             </tr>
+         </thead>
+
+         <tbody> <!--tbody derrespeita a parte do corpo legitimo dos dados -->
+            <tr>
+                <!-- o td desrespeita a parte dos dados de cada coluna de nossa tabela   -->
+
+                <!-- atribultos que voce pode usar na tag td, rowspan = por padrao ele ja e 1, se voce coloca 2 ele ocupa o espaco de outro 
+                coluna vertical, ao contrario da colspan= que ele ocupa horisontal  -->
+                <td>Produto 1</td>
+                <td>2</td>
+                <td>5$</td>
+                <td>sim</td>
+            </tr>
+            <tr>
+                <!-- o td desrespeita a parte dos dados de cada coluna de nossa tabela   -->
+                <td>Produto 2</td>
+                <td>5</td>
+                <td>10$</td>
+                <td>sim</td>
+            </tr>
+            <tr>
+                <!-- o td desrespeita a parte dos dados de cada coluna de nossa tabela   -->
+                <td>Produto 3</td>
+                <td>2</td>
+                <td>15$</td>
+                <td>não</td>
+            </tr>
+        </tbody>
+
+        <!-- Roda pe da nossa tabela, o tfoot serve pra agrupa um conteudo no roda pe da nossa tabela
+         alem disso ele e ele e utilisado pra represente informações importante, como valores totais, resumos e outras iformações 
+         agregadas--> 
+         <tfoot>
+            <tr>
+                <td colspan="3">total</td>
+                <td>30$</td>
+            </tr>
+         </tfoot>
+
+
+    </table>
+
+
+   
+
+
+</body>
+</html>
